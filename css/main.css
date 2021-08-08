@@ -68,6 +68,7 @@ color: white;
     color: white;
     font-size: 48px;
     text-align: center;
+    padding: 0px 20px;
 }
 
 .headerContainer {
@@ -163,7 +164,7 @@ letter-spacing: 2px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 120px;
+    
 }
 .heroImage {
     width: 100vw;
@@ -367,6 +368,11 @@ letter-spacing: 2px;
     letter-spacing: 2px;
     color: white;
     padding: 20px 0px;
+    
+}
+
+.footerButton {
+    margin-top: 24px;
 }
 
 #lowerFooter {
