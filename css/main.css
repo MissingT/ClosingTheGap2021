@@ -68,11 +68,14 @@ color: white;
     color: white;
     font-size: 48px;
     text-align: center;
-    padding: 0px 20px;
 }
 
 .headerContainer {
     margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .headerTextdark {
@@ -93,7 +96,7 @@ color: white;
     font-size: 20px;
     margin-top: -20px;
     text-align: center;
-    padding: 0px 100px;
+    width: 80vw;
 }
 
 .darkParagraph {
@@ -541,7 +544,7 @@ input[type="text"].formFill::placeholder { /* Chrome, Firefox, Opera, Safari 10.
     justify-content: center;
     align-items: center;
     line-height: 100px;
-    margin-top: 150px;
+    margin-top: 96px;
     font-size: 48px;
     text-decoration: none;
     color: white;
@@ -558,7 +561,6 @@ input[type="text"].formFill::placeholder { /* Chrome, Firefox, Opera, Safari 10.
     }
 
     .inMenu {
-        margin-top: 100px;
         font-family: 'IBM Plex Mono', monospace;
         font-weight: 600;
         color: white;
