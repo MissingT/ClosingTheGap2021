@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/21b8774178.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="navWrapper">
+        <div class="nav">
+            <a href="./index.html"><img id="logo" src="images/LogoWhite.png" alt="PinellasLogo"></a>
+            <a href="javascript:void(0);" onclick="myFunction()" id="close"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+
+    <div class="searchContainer">
+        <form class="searchBar" action="/action_page.php">
+          <input type="text" class="search" placeholder="Search.." name="search">
+          <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <div id="menuPullout">
+        <a href="javascript:void(0);" onclick="myFunction()" id="close"><i class="fas fa-times"></i></a>
+
+        <div class="menuItems">
+            <a href="./programInfo.html">Program Info</a>
+            <a href="./resources.html">Resources</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="buttoninMenu">
+            <h3 class="outerButtontext inMenu">Bring the program to your school.</h3>
+            <a href="./application1.html"><div class="buttonWhite">Apply Now</div></a>
+        </div>
+    </div>
+    
+    <h1 class="headerTextdark">Program Info</h1>
+    <h2>What is Closing the Gap?</h2>
+    <p>A detrimental imbalance has existed nationally that has left boys at an unintentional systemic disadvantage in learning. Decisions are made about curricular content, behavior management and the structure of the school day that inadvertently ignores boys’ interests, experiences and inherent tendencies. Compared to girls, boys often perform lower academically and receive more disciplinary action, and are more frequently diagnosed with learning disabilities and emotional disorders. Unfortunately, these elementary performance disparities follow the genders through to high school graduation where the gap in graduation rates can also be found.
+     <br><br> The Foundation’s board oversaw the creation of a white paper on the subject and, in 2013-14, held a series of community symposiums identifying the gap in our community. Working closely with Pinellas County Schools, the Foundation launched a transformative endeavor. It began with six Pinellas elementary schools and has since grown to 10, each offering gender specific teaching methods to support student success.</p>
+
+     <div class="statContainer">
+        <h2>9.7%</h2>
+        <p>The percentage the gender gap has been closed at Woodlawn from 2017-18 to 2018-19.</p>
+    <br>
+    <h2>10%</h2>
+    <p>The nearly 10 percentage point gain in literacy proficiency for boys (Grades 3-5, 2019- 20) at Belcher Elementary, designated as the next Closing the Gap showcase school.</p>
+    <br>
+    <h2>47.7%</h2>
+    <p>The program’s percentage of projected literacy proficiency for boys Grades 3-5 from Winter 2019-20;  improved from 43.1 in 2018-19.</p>
+    <br>
+    </div>
+
+    <div class="benefitContainer">
+        <h2>Who Benefits from Closing the Gap?</h2>
+        <div class="benefitIconcontainer">
+            <button id="studentIcon" class="benefitButton"><i class="largeIcon fas fa-user-graduate"></i>&nbsp&nbspStudent Development</button>
+            <p id="studentInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            <button id="teacherIcon" class="benefitButton"><i class="largeIcon fas fa-chalkboard-teacher"></i>&nbsp&nbspTeacher Development</button>
+            <p id="teacherInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            <button id="communityIcon" class="benefitButton"><i class="largeIcon fas fa-users"></i>&nbsp&nbspCommunity Development</button>
+            <p id="communityInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+        </div>
+
+    </div>
+
+    <h2 class="feedbackTab">Feedback from Students and Teachers</h2>
+    <div class="videoContainer">
+    <iframe class="youtubeVideo" src="https://www.youtube.com/embed/dLBLz9OPXl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2>Want to bring Closing the Gap to your school?</h2>
+    <div class="buttonContainer">
+        <a href="application1.html"><div class="buttonDark">Apply Here</div></a>
+    </div>
+
+
+    <div class="footer">
+        <a href="#"><img id="logo" src="images/LogoWhite.png" alt="PinellasLogo"></a>
+        <a class="footerItem" href="./programInfo.html">Program Info</a>
+        <a class="footerItem" href="./resources.html">Resources</a>
+        <a class="footerItem" href="#">FAQs</a>
+        <a href="./application1.html"><div class="buttonWhite">Apply Now</div></a>
+
+        <div class="resourceIconscontainer">
+            <div class="iconContainer">
+                <a href="#"><i class="icon fab fa-instagram"></i></a>
+            </div>
+            <div class="iconContainer">
+                <a href="#"><i class="icon fab fa-twitter"></i></a>
+            </div>
+            <div class="iconContainer">
+                <a href="#"><i class="icon fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+    <h3 id="lowerFooter">Copyright ©2021</h3>
+    <h3 id="lowerFooter">(727) 888-8888</h3>
+    <h3 id="lowerFooter">pinellas@closingthegap.com</h3>
+
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/21b8774178.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navWrapper">
+        <div class="nav">
+            <a href="./index.html"><img id="logo" src="images/LogoWhite.png" alt="PinellasLogo"></a>
+            <a href="javascript:void(0);" onclick="myFunction()" id="close"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+
+    <div class="searchContainer">
+        <form class="searchBar" action="/action_page.php">
+          <input type="text" class="search" placeholder="Search.." name="search">
+          <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <div id="menuPullout">
+        <a href="javascript:void(0);" onclick="myFunction()" id="close"><i class="fas fa-times"></i></a>
+
+        <div class="menuItems">
+            <a href="./programInfo.html">Program Info</a>
+            <a href="./resources.html">Resources</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="buttoninMenu">
+            <h3 class="outerButtontext inMenu">Bring the program to your school.</h3>
+            <a href="./application1.html"><div class="buttonWhite">Apply Now</div></a>
+        </div>
+    </div>
+    
+    <section class="step1">
+        <div class="stepContainer">
+            <img src="./images/Step3.png" alt="">
+        </div>
+        <h1 class="headerTextdark">How can we help?</h1>
+        <p>Check all that apply.</p>
+
+            <div class="fieldContainer">
+                <form action="/action_page.php">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Training and Events</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Funding</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Boys Learning</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Girls Learning</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Classroom Structure</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Professional Development</label><br>
+                </form>
+                <h2 class="fieldHeader">Other</h2>
+                <form id="applicationForm" action="/action_page.php">
+                    <input  type="text" class="formFill" placeholder="Your need..." name="search">
+                </form>
+            </div>
+            <div class="applicationButtons">
+                <a href="./application2.html"><div class="buttonWhite withBorder"><i class="fas fa-chevron-left"></i>&nbsp&nbspBack</div></a>
+                <a href="./application4.html"><div class="buttonDark">Submit</div></a>
+            </div>
+
+    </section>
+
+    <div class="footer">
+        <a href="#"><img id="logo" src="images/LogoWhite.png" alt="PinellasLogo"></a>
+        <a class="footerItem" href="./programInfo.html">Program Info</a>
+        <a class="footerItem" href="./resources.html">Resources</a>
+        <a class="footerItem" href="#">FAQs</a>
+        <a href="./application1.html"><div class="buttonWhite">Apply Now</div></a>
+
+        <div class="resourceIconscontainer">
+            <div class="iconContainer">
+                <a href="#"><i class="icon fab fa-instagram"></i></a>
+            </div>
+            <div class="iconContainer">
+                <a href="#"><i class="icon fab fa-twitter"></i></a>
+            </div>
+            <div class="iconContainer">
+                <a href="#"><i class="icon fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+    <h3 id="lowerFooter">Copyright ©2021</h3>
+    <h3 id="lowerFooter">(727) 888-8888</h3>
+    <h3 id="lowerFooter">pinellas@closingthegap.com</h3>
+
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

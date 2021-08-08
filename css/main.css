@@ -1,0 +1,505 @@
+html {
+    transition: 0.4s ease;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(156, 156, 156);
+    margin: 0;
+padding: 0;
+}
+
+.nav {
+    background-color: #FC6B00;
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+position: sticky;
+color: white;
+
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+}
+
+
+.navWrapper {
+    height: 100%;
+}
+
+.menuText {
+    margin-right: 40px;
+    margin-top: -10px;
+    color: white;
+    display: none;
+}
+
+.firstHeader {
+    color: black;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+
+.headerTextwhite {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+.headerTextdark {
+    color: black;
+    font-size: 48px;
+    text-align: left;
+    display: flex;
+    z-index: 5;
+}
+
+.subheaderText {
+    color: white;
+    font-size: 20px;
+    margin-top: -20px;
+    text-align: center;
+    padding: 0px 100px;
+}
+
+.outerButtontextwhite {
+    color: white; 
+    text-align: center;  
+}
+
+.outerButtontextdark {
+    color: black; 
+    text-align: center;  
+}
+
+.buttonWhite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 200px;
+height: 50px;
+background-color: white;
+}
+
+.buttonDark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 200px;
+height: 50px;
+background-color: black;
+color: white;
+}
+
+
+.buttonGroup {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.heroImage {
+    width: 100vw;
+    height: 60vh;
+    background-color: cadetblue;
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(50%);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.applicationButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.withBorder {
+    border: solid 1px black;
+}
+
+.tabContainer {
+    background-color: #FC6B00;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+
+.videoTabcontainer {
+    border: 1px red solid;
+    width: 480px;
+    margin: 10px 0px;
+}
+
+.videoThumbnail {
+    width: inherit;
+    height: auto;
+}
+
+.videoContainer {
+    margin: 0px;
+    width: 100vw;
+    height: 480px;
+}
+
+.youtubeVideo {
+    width: inherit;
+    height: inherit;
+    margin-top: -20px;
+}
+
+.articleContainer {
+    padding: 20px;
+}
+
+.hero {
+    z-index: 0;
+    height: 600px;
+}
+
+#menu {
+    display: none;
+}
+
+.bodyImage {
+    width: 100vw;
+    height: 40vh;
+    background-color: cadetblue;
+    object-fit: cover;
+}
+
+@media screen and (orientation: portrait) {
+    
+    
+    .heroImage {
+        height: 600px;
+    }
+    
+    body {
+        background-color: #fff6e0;
+    }
+    
+    #menu {
+        display:block;
+        font-size: 36px;
+        padding: 0px 30px 0px 0px; 
+    }
+
+    .nav {
+        z-index: 1;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+    }
+
+.menuText {
+    margin-right: 40px;
+    margin-top: -10px;
+    color: white;
+    display: flex;
+}
+
+    #logo {
+        width: 60px;
+        height: 60px;
+        padding: 20px 30px;
+        
+    }
+
+    #menuPullout {
+        background-color: #FC6B00;
+        height: 100vh;
+        width: 100vw;
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    
+.whiteBodycopy {
+    color: white;
+}
+
+.bodyContainer {
+    background-color: black;
+    padding: 20px 10px;
+    
+}
+
+#leftAlign {
+    text-align: left;
+}
+
+.resourceIconscontainer {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.icon{
+    font-size: 36px;
+
+}
+
+.fab {
+    color: black;
+    padding: 40px 20px;
+    font-size: 48px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+.footerItem {
+    font-size: 32px;
+    padding: 20px 0px;
+}
+
+#lowerFooter {
+    color: white;
+    margin: 10px 0px;
+}
+
+.searchContainer {
+    background-color: #FC6B00;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-top: 2px solid white;
+}
+
+input {
+    height: 30px;
+    background-color: #FC6B00; 
+    font-size: 18px;   
+    color: white;
+    border: none;
+    border-bottom: white 2px solid;
+    width: 50vw;
+    padding: 0px 10px;
+}
+
+.formFill {
+    height: 30px;
+    background-color: transparent; 
+    font-size: 18px;   
+    color: black;
+    border: none;
+    border-bottom: black 2px solid;
+    width: 50vw;
+    padding: 0px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#articleLink {
+    border-bottom: 1px solid blue;
+    width: 75vw;
+}
+
+#downloadLink {
+    border-bottom: 1px solid blue;
+    width: 75vw;
+}
+
+.linkIcon {
+    font-size: inherit;
+}
+
+.statContainer {
+    background-color: #FC6B00;
+    color: white;
+}
+
+.innerFieldcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: inherit;
+}
+
+.fa-search {
+    padding: 0px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+}
+
+.benefitIconcontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.benefitButton {
+    color: white;
+    border: none;
+    background-color: #18A1B2;
+    font-size: 24px;
+    padding: 20px;
+    margin: 10px;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+
+}
+
+.feedbackTab {
+    background-color: #FC6B00;
+    color: white;
+    padding: 20px;
+}
+
+#studentInfo, #teacherInfo, #communityInfo {
+    display: none;
+}
+
+.largeIcon {
+    font-size: 48px;
+}
+
+.searchButton {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 10px;
+}
+
+input[type="text"].search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+}
+
+
+input[type="text"].formFill::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1;
+}
+
+#applicationDropdown {
+
+    height: 30px;
+    background-color: transparent; 
+    font-size: 18px;   
+    color: black;
+    border: none;
+    border-bottom: black 2px solid;
+    width: 50vw;
+    padding: 0px 10px;
+}
+
+.searchBar {
+    background-color: none;
+    color: white;
+}
+
+#applicationForm {
+    color: white;
+}
+
+.stepContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.step1 {
+    padding: 0px 40px;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+    margin-top: 150px;
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+}
+
+    #close {
+        color: white;
+        float: right;
+        display:flex;
+        position: relative;
+        font-size: 36px;
+        padding: 30px; 
+
+    }
+
+    .inMenu {
+        margin-top: 100px;
+    }
+
+    .buttoninMenu {
+        display: flex;
+justify-content: center;
+align-items: center;    
+flex-direction: column;
+}
+
+.firstHeader {
+    color: black;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+}

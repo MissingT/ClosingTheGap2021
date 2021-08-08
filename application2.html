@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/21b8774178.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navWrapper">
+        <div class="nav">
+            <a href="./index.html"><img id="logo" src="images/LogoWhite.png" alt="PinellasLogo"></a>
+            <a href="javascript:void(0);" onclick="myFunction()" id="close"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+
+    <div class="searchContainer">
+        <form class="searchBar" action="/action_page.php">
+          <input type="text" class="search" placeholder="Search.." name="search">
+          <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <div id="menuPullout">
+        <a href="javascript:void(0);" onclick="myFunction()" id="close"><i class="fas fa-times"></i></a>
+
+        <div class="menuItems">
+            <a href="./programInfo.html">Program Info</a>
+            <a href="./resources.html">Resources</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="buttoninMenu">
+            <h3 class="outerButtontext inMenu">Bring the program to your school.</h3>
+            <a href="./application1.html"><div class="buttonWhite">Apply Now</div></a>
+        </div>
+    </div>
+    
+    <section class="step1">
+        <div class="stepContainer">
+            <img src="./images/Step2.png" alt="">
+        </div>
+        <h1 class="headerTextdark">School Information</h1>
+            <div class="fieldContainer">
+                <h2 class="fieldHeader">Name of School</h2>
+                <form id="applicationForm" action="/action_page.php">
+                    <input  type="text" class="formFill" placeholder="B.B. Smith Elementary School" name="search">
+                </form>
+                <h2 class="fieldHeader">School Address</h2>
+                <form id="applicationForm" action="/action_page.php">
+                    <input  type="text" class="formFill" placeholder="800 NW Parkway Ave." name="search">
+                </form>
+                <div class="innerFieldcontainer">
+                    <h2 class="fieldHeader">City</h2>
+                    <form id="applicationForm" action="/action_page.php">
+                        <input  type="text" class="formFill" placeholder="St. Petersburg" name="search">
+                    </form>
+                    <h2 class="fieldHeader">Zip Code</h2>
+                    <form id="applicationForm" action="/action_page.php">
+                        <input  type="text" class="formFill" placeholder="00000" name="search">
+                    </form>
+                </div>
+                <h2 class="fieldHeader">County</h2>
+                <form id="applicationForm" action="/action_page.php">
+                    <input  type="text" class="formFill" placeholder="Pinellas" name="search">
+                </form>
+                <h2 class="fieldHeader">Phone Number</h2>
+                <form id="applicationForm" action="/action_page.php">
+                    <input  type="text" class="formFill" placeholder="(000) 000-0000" name="search">
+                </form>
+
+            </div>
+            <div class="applicationButtons">
+                <a href="./application1.html"><div class="buttonWhite withBorder"><i class="fas fa-chevron-left"></i>&nbsp&nbspBack</div></a>
+                <a href="./application3.html"><div class="buttonDark">Next&nbsp&nbsp<i class="fas fa-chevron-right"></i></div></a>
+            </div>
+
+    </section>
+
+    <div class="footer">
+        <a href="#"><img id="logo" src="images/LogoWhite.png" alt="PinellasLogo"></a>
+        <a class="footerItem" href="./programInfo.html">Program Info</a>
+        <a class="footerItem" href="./resources.html">Resources</a>
+        <a class="footerItem" href="#">FAQs</a>
+        <a href="./application1.html"><div class="buttonWhite">Apply Now</div></a>
+
+        <div class="resourceIconscontainer">
+            <div class="iconContainer">
+                <a href="#"><i class="icon fab fa-instagram"></i></a>
+            </div>
+            <div class="iconContainer">
+                <a href="#"><i class="icon fab fa-twitter"></i></a>
+            </div>
+            <div class="iconContainer">
+                <a href="#"><i class="icon fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+    <h3 id="lowerFooter">Copyright ©2021</h3>
+    <h3 id="lowerFooter">(727) 888-8888</h3>
+    <h3 id="lowerFooter">pinellas@closingthegap.com</h3>
+
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
