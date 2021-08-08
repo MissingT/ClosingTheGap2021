@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 function myFunction() {
     var x = document.getElementById("menuPullout");
     if (x.style.display === "block") {
@@ -10,8 +12,8 @@ function myFunction() {
   }
 
 
-  $(document).ready(function(){
     $(".benefitButton").click(function(event){
       $(event.target).next().slideToggle();
     });
-  });
+
+});
