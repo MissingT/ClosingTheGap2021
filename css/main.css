@@ -6,8 +6,19 @@ html {
 body {
     background-color: rgb(156, 156, 156);
     margin: 0;
-padding: 0;
+    padding: 0;
 }
+
+@font-face {
+    font-family: IkarosRegular;
+    src: url(../fonts/Ikaros-Regular.otf);
+}
+
+@font-face {
+    font-family: IkarosLight;
+    src: url(../fonts/Ikaros-Light.otf);
+}
+
 
 .nav {
     background-color: #FC6B00;
@@ -28,6 +39,11 @@ color: white;
     padding: 20px;
 }
 
+#footerLogo {
+    width: 90px;
+    height: 90px;
+    padding: 40px;
+}
 
 .navWrapper {
     height: 100%;
@@ -41,31 +57,38 @@ color: white;
 }
 
 .firstHeader {
-    color: black;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     position: relative;
     z-index: 20;
 }
 
 .headerTextwhite {
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
     color: white;
     font-size: 48px;
     text-align: center;
+    padding: 0px 20px;
+}
+
+.headerContainer {
+    margin-bottom: 80px;
 }
 
 .headerTextdark {
-    color: black;
+    color: #FC6B00;
     font-size: 48px;
+    padding: 0px 20px;
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
     text-align: left;
     display: flex;
     z-index: 5;
 }
 
 .subheaderText {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
     color: white;
     font-size: 20px;
     margin-top: -20px;
@@ -73,23 +96,48 @@ color: white;
     padding: 0px 100px;
 }
 
+.darkParagraph {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    color: #313131;
+    line-height: 40px;
+    padding: 0px 25px;
+}
+
+.topMargin {
+    margin-top: 40px;
+}
+
 .outerButtontextwhite {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
     color: white; 
-    text-align: center;  
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 18px;  
 }
 
 .outerButtontextdark {
-    color: black; 
-    text-align: center;  
+    color: #313131; 
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 18px; 
 }
 
 .buttonWhite {
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 width: 200px;
 height: 50px;
-background-color: white;
+background-color: #18A1B2;
+border-radius: 200px;
 }
 
 .buttonDark {
@@ -98,8 +146,11 @@ background-color: white;
     align-items: center;
 width: 200px;
 height: 50px;
-background-color: black;
+background-color: #18A1B2;
 color: white;
+border-radius: 200px;
+font-family: IkarosRegular;
+letter-spacing: 2px;
 }
 
 
@@ -109,15 +160,14 @@ color: white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 120px;
 }
 .heroImage {
     width: 100vw;
     height: 60vh;
-    background-color: cadetblue;
-    object-fit: cover;
+    object-fit: none;
     position: absolute;
-    filter: brightness(50%);
+    filter: brightness(40%);
 }
 
 .buttonContainer {
@@ -137,7 +187,7 @@ color: white;
 }
 
 .withBorder {
-    border: solid 1px black;
+    border: solid 1px #313131;
 }
 
 .tabContainer {
@@ -179,6 +229,9 @@ color: white;
 .hero {
     z-index: 0;
     height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #menu {
@@ -186,8 +239,10 @@ color: white;
 }
 
 .bodyImage {
+    margin-top: -10px;
+    margin-bottom: -4px;
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
     background-color: cadetblue;
     object-fit: cover;
 }
@@ -241,12 +296,17 @@ color: white;
         display: none;
     }
     
-.whiteBodycopy {
+.whiteParagraph {
     color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0px 25px;
 }
 
 .bodyContainer {
-    background-color: black;
+    background-color: #FC6B00;
     padding: 20px 10px;
     
 }
@@ -256,11 +316,19 @@ color: white;
 }
 
 .resourceIconscontainer {
+    padding: 20px;
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    letter-spacing: 2px;
+}
+
+.homepageIcontext {
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
+    font-size: 18px;
 }
 
 .iconContainer {
@@ -277,7 +345,7 @@ color: white;
 }
 
 .fab {
-    color: black;
+    color: white;
     padding: 40px 20px;
     font-size: 48px;
 }
@@ -287,17 +355,25 @@ color: white;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: gray;
+    background-color: #FC6B00;
 }
 
 .footerItem {
     font-size: 32px;
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
+    color: white;
     padding: 20px 0px;
 }
 
 #lowerFooter {
     color: white;
-    margin: 10px 0px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    line-height: 16px;
+    margin-bottom: 40px;
 }
 
 .searchContainer {
@@ -315,7 +391,7 @@ input {
     color: white;
     border: none;
     border-bottom: white 2px solid;
-    width: 50vw;
+    width: 60vw;
     padding: 0px 10px;
 }
 
@@ -323,9 +399,9 @@ input {
     height: 30px;
     background-color: transparent; 
     font-size: 18px;   
-    color: black;
+    color: #313131;
     border: none;
-    border-bottom: black 2px solid;
+    border-bottom: #313131 2px solid;
     width: 50vw;
     padding: 0px 10px;
 }
@@ -364,7 +440,8 @@ a {
 
 .fa-search {
     padding: 0px;
-    font-size: 18px;
+    margin-top: 10px;
+    font-size: 24px;
     width: 30px;
     height: 30px;
     display: flex;
@@ -422,7 +499,7 @@ input[type="text"].search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+
 
 
 input[type="text"].formFill::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: black;
+    color: #313131;
     opacity: 1;
 }
 
@@ -431,9 +508,9 @@ input[type="text"].formFill::placeholder { /* Chrome, Firefox, Opera, Safari 10.
     height: 30px;
     background-color: transparent; 
     font-size: 18px;   
-    color: black;
+    color: #313131;
     border: none;
-    border-bottom: black 2px solid;
+    border-bottom: #313131 2px solid;
     width: 50vw;
     padding: 0px 10px;
 }
@@ -457,13 +534,15 @@ input[type="text"].formFill::placeholder { /* Chrome, Firefox, Opera, Safari 10.
 }
 
 .menuItems {
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 100px;
     margin-top: 150px;
-    font-size: 36px;
+    font-size: 48px;
     text-decoration: none;
     color: white;
 }
@@ -480,6 +559,12 @@ input[type="text"].formFill::placeholder { /* Chrome, Firefox, Opera, Safari 10.
 
     .inMenu {
         margin-top: 100px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+        padding: 0px 10px;
+        font-size: 18px;
     }
 
     .buttoninMenu {
@@ -490,8 +575,6 @@ flex-direction: column;
 }
 
 .firstHeader {
-    color: black;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
