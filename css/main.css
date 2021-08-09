@@ -71,12 +71,36 @@ color: white;
     padding: 0px 20px;
 }
 
+.resourcesTabtext {
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding: 0px 8px;
+}
+
+#smallerFont {
+    font-size: 26px;
+    margin-right: 20px;
+}
+
 .headerContainer {
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.pageHeader {
+    color: #FC6B00;
+    font-size: 24px;
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
+    text-align: left;
+    display: flex;
+    z-index: 5;
 }
 
 .headerTextdark {
@@ -107,6 +131,26 @@ color: white;
     color: #313131;
     line-height: 40px;
     padding: 0px 25px;
+}
+
+.pageParagraph {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    color: #313131;
+    line-height: 28px;
+}
+
+.fieldHeader {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 16px;
+    color: #313131;
+}
+
+.stepImage {
+    padding: 20px 0px;
+    transform: scale(130%);
 }
 
 .topMargin {
@@ -157,6 +201,50 @@ font-family: IkarosRegular;
 letter-spacing: 2px;
 }
 
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    margin: 14px 0px;
+}
+
+.checkbox {
+    width: 30px;
+}
+
+.checkboxText {
+    margin-left: 12px;
+}
+
+#twoButtonswhite {
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
+    color: #18A1B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: auto;
+height: 50px;
+background-color: white;
+border-radius: 200px;
+border: 1px solid #18A1B2;
+padding: 0px 30px;
+margin: 10px;
+}
+
+#twoButtonsdark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    margin: 10px;
+width: auto;
+height: 50px;
+background-color: #18A1B2;
+color: white;
+border-radius: 200px;
+font-family: IkarosRegular;
+letter-spacing: 2px;
+}
 
 .buttonGroup {
     text-align: center;
@@ -204,9 +292,33 @@ letter-spacing: 2px;
 }
 
 .videoTabcontainer {
-    border: 1px red solid;
-    width: 480px;
-    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    overflow:auto;
+    margin-left: 28px;
+}
+
+.videoTab {
+    border: 1px #313131 solid;
+    width: 280px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.videoTitle {
+    font-family: IkarosRegular;
+    font-size: 18px;
+    color: #313131;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+.videoDate {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: #FC6B00;
+    margin-left: 20px;
+
 }
 
 .videoThumbnail {
@@ -220,6 +332,14 @@ letter-spacing: 2px;
     height: 480px;
 }
 
+.videoCategory {
+    color: #313131; 
+    font-family: IkarosRegular;
+    text-align: left;
+    padding: 0px 0px 0px 28px;
+    font-size: 24px; 
+}
+
 .youtubeVideo {
     width: inherit;
     height: inherit;
@@ -227,7 +347,13 @@ letter-spacing: 2px;
 }
 
 .articleContainer {
-    padding: 20px;
+    padding: 0px 0px 0px 24px;
+}
+
+.downloadsContainer {
+    padding: 0px 0px 0px 24px;
+    font-family: IkarosRegular;
+
 }
 
 .hero {
@@ -395,6 +521,8 @@ letter-spacing: 2px;
 
 input {
     height: 30px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
     background-color: #FC6B00; 
     font-size: 18px;   
     color: white;
@@ -404,13 +532,21 @@ input {
     padding: 0px 10px;
 }
 
+select {
+    margin-bottom: 60px;
+}
+
+.bottomMargin {
+    margin-bottom: 60px;
+}
+
 .formFill {
     height: 30px;
     background-color: transparent; 
     font-size: 18px;   
     color: #313131;
     border: none;
-    border-bottom: #313131 2px solid;
+    border-bottom:  2px solid;
     width: 50vw;
     padding: 0px 10px;
 }
@@ -420,18 +556,32 @@ a {
     color: inherit;
 }
 
+.articleAuthor {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    color: #313131;
+    margin-top: -10px;
+}
+
 #articleLink {
-    border-bottom: 1px solid blue;
+    font-family: IkarosRegular;
+    font-size: 18px;
+    color: #313131;
+    border-bottom: 2px solid #18A1B2;
     width: 75vw;
 }
 
 #downloadLink {
-    border-bottom: 1px solid blue;
+    font-size: 18px;
+    color: #313131;
+    border-bottom: 2px solid #18A1B2;
     width: 75vw;
 }
 
 .linkIcon {
     font-size: inherit;
+    color: #18A1B2;
 }
 
 .statContainer {
@@ -522,6 +672,7 @@ input[type="text"].formFill::placeholder { /* Chrome, Firefox, Opera, Safari 10.
     border-bottom: #313131 2px solid;
     width: 50vw;
     padding: 0px 10px;
+    opacity: 60%;
 }
 
 .searchBar {
@@ -531,6 +682,8 @@ input[type="text"].formFill::placeholder { /* Chrome, Firefox, Opera, Safari 10.
 
 #applicationForm {
     color: white;
+    margin-bottom: 30px;
+    opacity: 60%;
 }
 
 .stepContainer {

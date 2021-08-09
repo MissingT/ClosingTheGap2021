@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,12 +24,12 @@
 
     <div class="searchContainer">
         <form class="searchBar" action="/action_page.php">
-          <input type="text" class="search" placeholder="Search.." name="search">
-          <button class="searchButton" disabled type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" class="search" placeholder="Search.." name="search">
+            <button class="searchButton" disabled type="submit"><i class="fa fa-search"></i></button>
         </form>
-      </div>
+    </div>
 
-      <div id="menuPullout">
+    <div id="menuPullout">
         <a href="javascript:void(0);" onclick="myFunction()" id="close"><i class="fas fa-times"></i></a>
 
         <div class="menuItems">
@@ -36,41 +39,60 @@
         </div>
         <div class="buttoninMenu">
             <h3 class="outerButtontext inMenu">Bring the program to your school.</h3>
-            <a href="./application1.html"><div class="buttonWhite">Apply Now</div></a>
+            <a href="./application1.html">
+                <div class="buttonWhite">Apply Now</div>
+            </a>
         </div>
     </div>
-    
+
     <section class="step1">
         <div class="stepContainer">
-            <img src="./images/Step3.png" alt="">
+            <img class="stepImage topMargin" src="./images/Step3.png" alt="">
         </div>
-        <h1 class="headerTextdark">How can we help?</h1>
-        <p>Check all that apply.</p>
+        <h1 class="pageHeader">How can we help?</h1>
+        <p class="pageParagraph">Check all that apply.</p>
 
-            <div class="fieldContainer">
-                <form action="/action_page.php">
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Training and Events</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> Funding</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Boys Learning</label><br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Girls Learning</label><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> Classroom Structure</label><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Professional Development</label><br>
-                </form>
-                <h2 class="fieldHeader">Other</h2>
-                <form id="applicationForm" action="/action_page.php">
-                    <input  type="text" class="formFill" placeholder="Your need..." name="search">
-                </form>
-            </div>
-            <div class="applicationButtons">
-                <a href="./application2.html"><div class="buttonWhite withBorder"><i class="fas fa-chevron-left"></i>&nbsp&nbspBack</div></a>
-                <a href="./application4.html"><div class="buttonDark">Submit</div></a>
-            </div>
+        <div class="fieldContainer">
+            <form action="/action_page.php">
+                <div class="checkboxContainer">
+                    <input class="checkbox" type="checkbox">
+                    <label class="pageParagraph checkboxText"> Training and Events</label>
+                </div>
+                <div class="checkboxContainer">
+                    <input class="checkbox" type="checkbox">
+                    <label class="pageParagraph checkboxText"> Funding</label>
+                </div>
+                <div class="checkboxContainer">
+                    <input class="checkbox" type="checkbox">
+                    <label class="pageParagraph checkboxText"> Boys Learning</label>
+                </div>
+
+                <div class="checkboxContainer"> <input class="checkbox" type="checkbox">
+                    <label class="pageParagraph checkboxText"> Girls Learning</label>
+                </div>
+                <div class="checkboxContainer"> <input class="checkbox" type="checkbox">
+                    <label class="pageParagraph checkboxText"> Classroom Structure</label>
+                </div>
+                <div class="checkboxContainer"><input class="checkbox" type="checkbox">
+                    <label class="pageParagraph checkboxText"> Professional Development</label>
+                </div>
+
+
+
+            </form>
+            <h2 class="fieldHeader">Other</h2>
+            <form id="applicationForm" action="/action_page.php">
+                <input type="text" class="formFill bottomMargin" placeholder="Your need..." name="search">
+            </form>
+        </div>
+        <div class="applicationButtons">
+            <a href="./application2.html">
+                <div id="twoButtonswhite"><i class="fas fa-chevron-left"></i>&nbsp&nbspBack</div>
+            </a>
+            <a href="./application4.html">
+                <div id="twoButtonsdark">Submit</div>
+            </a>
+        </div>
 
     </section>
 
@@ -79,7 +101,9 @@
         <a class="footerItem" href="./programInfo.html">Program Info</a>
         <a class="footerItem" href="./resources.html">Resources</a>
         <a class="footerItem" href="#">FAQs</a>
-        <a href="./application1.html"><div class="buttonWhite footerButton">Apply Now</div></a>
+        <a href="./application1.html">
+            <div class="buttonWhite footerButton">Apply Now</div>
+        </a>
 
         <div class="resourceIconscontainer">
             <div class="iconContainer">
@@ -100,4 +124,5 @@
     <script src="https://kit.fontawesome.com/21b8774178.js" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
 </body>
+
 </html>
