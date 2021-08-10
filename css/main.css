@@ -71,6 +71,16 @@ color: white;
     padding: 0px 20px;
 }
 
+.statsHeader {
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 48px;
+    text-align: left;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+}
+
 .resourcesTabtext {
     font-family: IkarosRegular;
     letter-spacing: 2px;
@@ -101,6 +111,19 @@ color: white;
     text-align: left;
     display: flex;
     z-index: 5;
+}
+.pageHeaderwhite {
+    color: white;
+    font-size: 24px;
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
+    text-align: left;
+    display: flex;
+    z-index: 5;
+}
+
+.leftMargin {
+    margin-left: 20px;
 }
 
 .headerTextdark {
@@ -139,6 +162,16 @@ color: white;
     font-size: 16px;
     color: #313131;
     line-height: 28px;
+}
+
+.pageParagraphwhite {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    line-height: 28px;
+    width: 80vw; 
+    padding: 0px 0px 20px 0px;
 }
 
 .fieldHeader {
@@ -587,6 +620,7 @@ a {
 .statContainer {
     background-color: #FC6B00;
     color: white;
+    padding: 30px 0px 30px 0px;
 }
 
 .innerFieldcontainer {
@@ -612,6 +646,8 @@ a {
 .benefitIconcontainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0px 20px;
 }
 
@@ -622,10 +658,11 @@ a {
     font-size: 24px;
     padding: 20px;
     margin: 10px;
-    width: 50vw;
+    width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
     align-items: center;
     border-radius: 200px;
 
