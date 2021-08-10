@@ -112,6 +112,17 @@ color: white;
     display: flex;
     z-index: 5;
 }
+
+.pageHeadernew {
+    color: #FC6B00;
+    font-size: 36px;
+    font-family: IkarosRegular;
+    letter-spacing: 2px;
+    text-align: left;
+    display: flex;
+    z-index: 5;
+}
+
 .pageHeaderwhite {
     color: white;
     font-size: 24px;
@@ -655,10 +666,11 @@ a {
     color: white;
     border: none;
     background-color: #18A1B2;
-    font-size: 24px;
+    font-size: 20px;
+    font-family: IkarosRegular;
     padding: 20px;
     margin: 10px;
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
