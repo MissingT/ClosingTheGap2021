@@ -792,7 +792,43 @@ flex-direction: column;
     position: relative;
 }
 
+.redirect {
+    display: none;
+}
 
 
+}
+
+@media screen and (orientation: landscape) {
+
+body {
+    overflow: hidden;
+}
+
+.redirect {
+width: 100vw;
+height: 100vh;
+z-index: 9999999999; 
+position: fixed;   
+background-color: #FC6B00;
+}
+
+h1 {
+        position: absolute;
+        top: 40%;
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 100vw;
+        height: 100vh;​
+}
+
+img {
+    position: absolute;
+    width: 500px;
+        top: 70%;
+        left: 36%;
+        margin-top: -50px;
+        margin-left: -50px;
+}
 
 }
